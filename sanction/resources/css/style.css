@@ -1,0 +1,5 @@
+#userform #perms ul + hr,
+#userform #perms ul + * + *,
+#userform #perms #permissions * {
+  display: none;
+}
