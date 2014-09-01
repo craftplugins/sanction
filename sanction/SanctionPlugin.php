@@ -73,6 +73,11 @@ class SanctionPlugin extends BasePlugin {
 
 	public function getUserCanSetPermissions()
 	{
+		if ($user->admin)
+		{
+			return true;
+		}
+
 		if ($user = craft()->userSession->user)
 		{
 			foreach ($user->groups as $group)
